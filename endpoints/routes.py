@@ -3,6 +3,13 @@ from flask_cors import CORS
 from lib.pan.task01_1 import panTask01_1
 from lib.pan.task01_2 import panTask01_2
 from lib.pan.task01_3 import panTask01_3
+from lib.pfn.task01_1 import pfnTask01_1
+from lib.pfn.task01_2 import pfnTask01_2
+from lib.pfn.task02_1 import pfnTask02_1
+from lib.pfn.task04_1 import pfnTask04_1
+from lib.pfn.task04_2 import pfnTask04_2
+from lib.pfn.task04_3 import pfnTask04_3
+from lib.pfn.task04_4 import pfnTask04_4
 
 # test debug libs
 from lib.test.number_np import *
@@ -15,7 +22,16 @@ TASK_FUNCTIONS = {
         "task01_1": panTask01_1,
         "task01_2": panTask01_2,
         "task01_3": panTask01_3,
-    }
+    },
+    "pfn": {
+        "task01_1": pfnTask01_1,
+        "task01_2": pfnTask01_2,
+        "task02_1": pfnTask02_1,
+        "task04_1": pfnTask04_1,
+        "task04_2": pfnTask04_2,
+        "task04_3": pfnTask04_3,
+        "task04_4": pfnTask04_4,
+    },
 }
 
 
