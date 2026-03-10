@@ -1,0 +1,23 @@
+def pfnTask04_2(**kwargs):
+    return [
+        {"color": "red", "text": ">>> "},
+        {"color": "black", "text": "x = 3"},
+        {"color": "black", "text": "\n"},
+        {"color": "red", "text": ">>> "},
+        {"color": "black", "text": "x = x + 6"},
+        {"color": "black", "text": "\n"},
+        {"color": "red", "text": ">>> "},
+        {"color": "black", "text": "y = x - 2"},
+        {"color": "black", "text": "\n"},
+        {"color": "red", "text": ">>> "},
+        {"color": "black", "text": "z = x + y"},
+        {"color": "black", "text": "\n"},
+        {"color": "red", "text": ">>> "},
+        {"color": "black", "text": "x = y + z"},
+        {"color": "black", "text": "\n"},
+        {"color": "red", "text": ">>> "},
+        {"color": "black", "text": "z = y + x"},
+        {"color": "black", "text": "\n"},
+        {"color": "red", "text": ">>> "},
+        {"color": "red", "text": "???"},
+    ]

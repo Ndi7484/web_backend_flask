@@ -18,8 +18,8 @@ def panTask01_3(**kwargs):
         return text.rjust(length, " ")
 
     # Split the incoming strings into [name, height]
-    parts1 = (kwargs['p1'] or "").split()
-    parts2 = (kwargs['p2'] or "").split()
+    parts1 = (kwargs["p1"] or "").split()
+    parts2 = (kwargs["p2"] or "").split()
 
     return [
         {"color": "blue", "text": "Person 1 | Name and Height: "},
@@ -32,9 +32,15 @@ def panTask01_3(**kwargs):
         {"color": "black", "text": "\n"},
         {"color": "blue", "text": "=" * 31},
         {"color": "black", "text": "\n"},
-        {"color": "blue", "text": f"{left_text(parts1[0])}|{right_text(parts1[1] if len(parts1) > 1 else '')}"},
+        {
+            "color": "blue",
+            "text": f"{left_text(parts1[0])}|{right_text(parts1[1] if len(parts1) > 1 else '')}",
+        },
         {"color": "black", "text": "\n"},
-        {"color": "blue", "text": f"{left_text(parts2[0])}|{right_text(parts2[1] if len(parts2) > 1 else '')}"},
+        {
+            "color": "blue",
+            "text": f"{left_text(parts2[0])}|{right_text(parts2[1] if len(parts2) > 1 else '')}",
+        },
         {"color": "black", "text": "\n"},
         {"color": "blue", "text": "=" * 31},
     ]
