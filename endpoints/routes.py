@@ -3,6 +3,8 @@ from flask_cors import CORS
 from lib.pan.task01_1 import panTask01_1
 from lib.pan.task01_2 import panTask01_2
 from lib.pan.task01_3 import panTask01_3
+# test debug libs
+from lib.test.number_np import *
 
 api_bp = Blueprint("api", __name__)
 CORS(api_bp)
@@ -39,6 +41,12 @@ def getTask():
     
     return jsonify({
         "output": output
+    })
+
+@api_bp.get('/api/test/<int:item_id>')
+def get_test_results(item_id:int):
+    return jsonify({
+        "output": numpTest() if item_id==1 else pandTest()
     })
 
 @api_bp.get("/api/data")
